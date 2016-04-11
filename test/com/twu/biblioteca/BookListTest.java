@@ -15,8 +15,7 @@ public class BookListTest {
     booklist = new ArrayList<Book>();
   }
   @Test
-  public void showListTest()
-  {
+  public void testShowList() {
     assertEquals(bookList.showList(), booklist);
   }
 }

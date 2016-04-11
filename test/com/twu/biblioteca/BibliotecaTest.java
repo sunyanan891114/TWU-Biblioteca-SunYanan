@@ -14,7 +14,7 @@ public class BibliotecaTest {
     welcomeString = "Hello, Welcome to Biblioteca. You can borrow a book";
   }
   @Test
-  public void welcomeTest() {
+  public void testWelcome() {
     assertEquals(bibliotechApp.welcome(), welcomeString);
   }
 }
