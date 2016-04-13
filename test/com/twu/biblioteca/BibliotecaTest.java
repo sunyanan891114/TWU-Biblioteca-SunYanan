@@ -1,21 +1,39 @@
 package com.twu.biblioteca;
 
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import static org.junit.Assert.assertEquals;
 
 public class BibliotecaTest {
   public BibliotecaApp bibliotechApp;
-  String welcomeString;
+  private String welcomeString;
+  private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
   @Before
   public void initialize() {
     bibliotechApp = new BibliotecaApp();
-    welcomeString = "Hello, Welcome to Biblioteca. You can borrow a book";
+    welcomeString = "Welcome to Biblioteca\n";
+  }
+
+  @Before
+  public void setUpStreams() {
+    System.setOut(new PrintStream(outContent));
+  }
+
+  @After
+  public void cleanUpStreams() {
+    System.setOut(null);
   }
   @Test
   public void testWelcome() {
-    assertEquals(bibliotechApp.welcome(), welcomeString);
+    bibliotechApp.welcome();
+    assertEquals(outContent.toString(), welcomeString);
   }
 }
 

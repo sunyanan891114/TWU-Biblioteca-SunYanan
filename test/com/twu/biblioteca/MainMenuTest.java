@@ -7,19 +7,15 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class MainMenuTest {
-  public Book book;
-  @Before
-  public void initialize() {
-    book = new Book();
-  }
-  @Test
-  public void testGetAuthor() {
-    assertEquals(book.getAuthor(), "syn");
-  }
+//  public MainMenu mainMenu;
+//  @Before
+//  public void initialize() {
+//    mainMenu = new MainMenu();
+//  }
+//  @Test
+//  public void testShowMenu() {
+//
+//  }
 
-  @Test
-  public void testGetYearPublished() {
-    assertEquals(book.getYearPublished(), "1989");
-  }
 }
 
