@@ -2,6 +2,7 @@ package com.twu.biblioteca;
 
 import com.twu.biblioteca.option.ListBookOption;
 import com.twu.biblioteca.option.Option;
+import com.twu.biblioteca.option.quitOption;
 
 import java.util.ArrayList;
 
@@ -16,12 +17,12 @@ public class BibliotecaApp {
 
     ArrayList<Option> os = new ArrayList<Option>();
     os.add(new ListBookOption());
+    os.add(new quitOption());
     MainMenu mm = new MainMenu(os);
     new BibliotecaApp().welcome();
-    BookList.getBookListInstance().showList();
+    booklist.showList();
     mm.start();
   }
-
   public void welcome() {
     System.out.println("Welcome to Biblioteca");
   }

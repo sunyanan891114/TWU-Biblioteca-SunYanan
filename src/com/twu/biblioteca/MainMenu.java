@@ -1,11 +1,12 @@
 package com.twu.biblioteca;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import com.twu.biblioteca.option.Option;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import static com.twu.biblioteca.variable.*;
 
 public class MainMenu {
 
@@ -53,7 +54,9 @@ public class MainMenu {
   }
 
   public void start() {
-    showMenu();
-    execOption(validate(getOption()));
+    while (IS_CONTINUE) {
+      showMenu();
+      execOption(validate(getOption()));
+    }
   }
 }
