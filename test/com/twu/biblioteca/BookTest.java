@@ -10,7 +10,7 @@ public class BookTest {
   public Book book;
   @Before
   public void initialize() {
-    book = new Book("syn", "1989");
+    book = new Book("syn", "1989",1);
   }
   @Test
   public void testGetAuthor() {

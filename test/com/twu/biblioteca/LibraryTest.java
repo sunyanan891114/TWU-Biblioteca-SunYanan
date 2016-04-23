@@ -2,16 +2,16 @@ package com.twu.biblioteca;
 
 
 import org.junit.Before;
-import org.junit.Test;
+
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
-public class BookListTest {
-  public static BookList bookList;
+public class LibraryTest {
+  public static Library bookList;
   public ArrayList<Book> booklist;
   @Before
   public void initialize() {
-    bookList = BookList.getBookListInstance();
+    bookList = Library.getBookListInstance();
     booklist = new ArrayList<Book>();
   }
 //  @Test

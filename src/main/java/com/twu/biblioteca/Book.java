@@ -3,12 +3,30 @@ package com.twu.biblioteca;
 public class Book {
   private String author;
   private String yearPublished;
+  private int id;
 
-  public Book(String author, String yearPublished) {
-    this.author = author;
-    this.yearPublished = yearPublished;
+  private boolean checkout = false;
+
+  public int getId() {
+    return id;
   }
 
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public Book(String author, String yearPublished, int id) {
+    this.author = author;
+    this.yearPublished = yearPublished;
+    this.id = id;
+  }
+
+  public boolean isCheckout() {
+    return checkout;
+  }
+  public void setCheckout(boolean checkout) {
+    this.checkout = checkout;
+  }
   public String getYearPublished() {
     return yearPublished;
   }

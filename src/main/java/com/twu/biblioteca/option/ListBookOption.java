@@ -1,11 +1,11 @@
 package com.twu.biblioteca.option;
 
-import com.twu.biblioteca.BookList;
+import com.twu.biblioteca.Library;
 
 public class ListBookOption implements Option{
   @Override
   public void exec() {
-    BookList.getBookListInstance().showList();
+    Library.getBookListInstance().showList();
   }
   @Override
   public String toString() {
