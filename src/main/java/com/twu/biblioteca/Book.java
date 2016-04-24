@@ -4,6 +4,7 @@ public class Book {
   private String author;
   private String yearPublished;
   private int id;
+  private String userName;
 
   private boolean checkout = false;
 
@@ -39,6 +40,15 @@ public class Book {
   public void setAuthor(String author) {
     this.author = author;
   }
+
+  public String getUserName() {
+    return userName;
+  }
+
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
+
   @Override
   public String toString() {
     return String.format(" %5s | %8s |%16s \n",this.getId(), this.getAuthor(), this.getYearPublished());

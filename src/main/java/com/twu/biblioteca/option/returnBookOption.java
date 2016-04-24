@@ -25,6 +25,7 @@ public class returnBookOption implements Option{
     }
     if (!check)
       System.out.println("There isn't a book " + id + ". Please try another ID");
+    keyboard.close();
   }
   @Override
   public String toString() {

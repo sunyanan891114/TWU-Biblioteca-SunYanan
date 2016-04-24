@@ -5,6 +5,8 @@ import com.twu.biblioteca.Library;
 
 import java.util.Scanner;
 
+import static com.twu.biblioteca.variable.user;
+
 public class checkoutBookOption implements Option{
   public void exec() {
     System.out.print( "Input the Book ID: ");
@@ -17,6 +19,7 @@ public class checkoutBookOption implements Option{
           System.out.println("The book " + id +" is borrowed. Borrow book failure!");
         } else {
           book.setCheckout(true);
+          book.setUserName(user.getLibrary_number());
           System.out.println("You borrowed the Book " + id + "successfully");
         }
         check = true;

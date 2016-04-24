@@ -3,7 +3,7 @@ package com.twu.biblioteca;
 import java.util.ArrayList;
 
 public class BibliotecaApp {
-
+  public static User user;
   public static void main(String[] args) {
     Book b = new Book("syn","1989",1);
     Movie m = new Movie(1, "movieName", "syn", "1989", 8);
