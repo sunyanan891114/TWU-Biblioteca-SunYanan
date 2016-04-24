@@ -67,6 +67,6 @@ public class Movie {
 
   @Override
   public String toString() {
-    return String.format(" %5s | %8s |%16s \n",this.getId(), this.getName(), this.getDirector());
+    return String.format(" %5s | %16s |%16s \n",this.getId(), this.getName(), this.getDirector());
   }
 }
