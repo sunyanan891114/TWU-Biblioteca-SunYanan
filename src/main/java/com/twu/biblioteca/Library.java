@@ -9,7 +9,7 @@ public class Library {
 
   private Library() {}
 
-  public static Library getBookListInstance() {
+  public static Library getLibraryInstance() {
     if (library == null) {
       library = new Library();
     }

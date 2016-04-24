@@ -8,7 +8,7 @@ public class BibliotecaApp {
     Book b = new Book("syn","1989",1);
     ArrayList<Book> bl = new ArrayList<Book>();
     bl.add(b);
-    Library booklist = Library.getBookListInstance();
+    Library booklist = Library.getLibraryInstance();
     booklist.setBooklist(bl);
 
 

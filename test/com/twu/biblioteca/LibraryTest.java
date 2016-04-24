@@ -14,7 +14,7 @@ public class LibraryTest {
   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
   @Before
   public void initialize() {
-    library = Library.getBookListInstance();
+    library = Library.getLibraryInstance();
     booklist = new ArrayList<Book>();
     booklist.add(new Book("syn","1989",1));
     library.setBooklist(booklist);

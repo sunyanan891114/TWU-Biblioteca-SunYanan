@@ -18,7 +18,9 @@ public class MainMenu {
     this.options = new ArrayList<Option>();
     this.options.add(new ListBookOption());
     this.options.add(new checkoutBookOption());
-    this.options.add(new returnBookOption()); 
+    this.options.add(new returnBookOption());
+    this.options.add(new checkoutMovieOption());
+    this.options.add(new returnMovieOption());
     this.options.add(new quitOption());
   }
 
