@@ -39,4 +39,8 @@ public class Book {
   public void setAuthor(String author) {
     this.author = author;
   }
+  @Override
+  public String toString() {
+    return String.format(" %5s | %8s |%16s \n",this.getId(), this.getAuthor(), this.getYearPublished());
+  }
 }

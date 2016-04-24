@@ -11,7 +11,7 @@ public class checkoutBookOption implements Option{
     Scanner keyboard = new Scanner(System.in);
     int id = keyboard.nextInt();
     boolean check = false;
-    for (Book book : Library.getBookListInstance().getLibarary()) {
+    for (Book book : Library.getBookListInstance().getBooklist()) {
       if (book.getId() == id) {
         if (book.isCheckout()) {
           System.out.println("The book " + id +" is borrowed. Borrow book failure!");

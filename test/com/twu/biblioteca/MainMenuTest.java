@@ -39,9 +39,6 @@ public class MainMenuTest extends EasyMockSupport{
   }
   @Test
   public void testSelectMenu() {
-
-
-
     System.setIn(System.in);
     getMainMenuInstance().showMenu();
   }
